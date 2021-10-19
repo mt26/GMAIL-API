@@ -7,10 +7,10 @@ const app=express()
 
 
 // These id's and secrets should come from .env file.
-const CLIENT_ID = '548601272484-i8sviaou77avgduvktlqbprfcggsrm8d.apps.googleusercontent.com';
-const CLEINT_SECRET = 'Ho4xmO7CO1MlMjdsTl58Un5J';
-const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
-const REFRESH_TOKEN = '1//047OeHrgtEeXCCgYIARAAGAQSNwF-L9IrHZD5NdaB5kAQBnLAb6VP3gpMLN5BK7UzgFvC2QxXlQrABJxfDwZ9xc1MQKl7tUA0RWY';
+const CLIENT_ID = 
+const CLEINT_SECRET = ;
+const REDIRECT_URI = 
+const REFRESH_TOKEN = 
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -31,7 +31,7 @@ async function sendMail() {
       service: 'gmail',
       auth: {
         type: 'OAuth2',
-        user: 'manntanwani@gmail.com',
+        user: 
         clientId: CLIENT_ID,
         clientSecret: CLEINT_SECRET,
         refreshToken: REFRESH_TOKEN,
@@ -41,8 +41,8 @@ async function sendMail() {
   
 
     const mailOptions = {
-      from: ' MANNTANWANI <manntanwani@gmail.com>',
-      to: 'conorthemma256@gmail.com',
+      from: "your mail",
+      to: "",
       subject: 'Hello from gmail using API',
       text: 'Hello from gmail email using API',
       html: '<h1>Hello from gmail email using API</h1>',
